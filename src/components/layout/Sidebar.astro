@@ -1,7 +1,7 @@
 ---
 import { config } from "@parseConfig"
 
-const navs = config.navigation
+const navMenu = config.navigation
 
 const currentPath = Astro.url.pathname
 const isActive = (href: string) =>
@@ -13,7 +13,7 @@ const isActive = (href: string) =>
     class="flex flex-wrap items-center gap-x-6 gap-y-1 border-b border-border/50 py-4 md:mt-16 md:h-fit md:flex-col md:items-end md:border-r md:border-b-0 md:py-0 md:pr-8"
   >
     {
-      navs.map((nav) => (
+      navMenu.map((nav) => (
         <a
           href={nav.href}
           class:list={[
