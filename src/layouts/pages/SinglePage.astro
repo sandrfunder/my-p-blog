@@ -3,7 +3,7 @@ import BaseLayout from "@layouts/BaseLayout.astro"
 import Prose from "@components/common/Prose.astro"
 
 const { frontmatter } = Astro.props
-const { title, description } = frontmatter
+const { title, description } = frontmatter.data
 ---
 
 <BaseLayout title={title} description={description}>
