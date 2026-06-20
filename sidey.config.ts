@@ -15,10 +15,10 @@ export const sideyConfig = {
     description: "A minimal, content-focused Astro theme for personal sites.",
 
     // The production domain where your site is deployed (no trailing slash)
-    url: "https://sidey.odhyp.com",
+    url: "https://sandrfunder.github.io/my-p-blog",
 
     // Your name, utilized in copyright strings and author meta tags
-    author: "Odhy Pradhana",
+    author: "sandrfunder",
 
     // The primary language attribute for HTML accessibility engines (e.g., "en", "id")
     locale: "en",

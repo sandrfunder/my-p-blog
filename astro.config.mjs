@@ -26,6 +26,8 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
+  base: "/my-p-blog",
+  output: "static",
   integrations: [astroExpressiveCode(), mdx(), icon(), sitemap()],
   markdown: {
     processor: unified({
