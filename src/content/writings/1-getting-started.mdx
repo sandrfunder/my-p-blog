@@ -1,126 +1,63 @@
 ---
-title: "Getting Started"
+title: "Two Paths for Ukrainian Fintech"
 description: "Everything you need to install Sidey, configure your site, and publish your first page."
-date: 2026-06-01
+date: 2026-06-21
 tags: ["sidey", "astro"]
 draft: false
 ---
 
-This guide will take you from zero to a running Sidey site, without prior Astro knowledge required.
+```markdown
+# Speaking at UNCHAIN Festival: Two Paths for Ukrainian Fintech
 
-## Prerequisites
+Spent yesterday speaking at the **UNCHAIN Festival**. I can't even remember when I last spoke in public, so it was a great kickoff for me as an introvert! 
 
-Before you begin, make sure you have the following installed:
+It was one of those panels where two speakers could technically come from the same ecosystem and still tell completely different stories. Together with **Tetiana Nikolenko** from PayForce, and moderated by **Sean Murphy**, we discussed what it means to build fintech businesses with Ukrainian roots today.
 
-- [Node.js](https://nodejs.org) `v22.12.0` or higher
-- Text editor
-- Terminal
-- [GitHub](https://github.com/login) Account (Optional)
-
-## Installation
-
-Sidey is a GitHub template. Head over to the [astro-sidey](https://github.com/odhyp/astro-sidey) repository and click **Use this template** to create a new repository from it.
-
-Then clone your new repository and install dependencies:
-
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-npm install
-```
-
-If you don't have a GitHub account, you can download the repository directly instead.
-Go to the [astro-sidey](https://github.com/odhyp/astro-sidey) repository, click **Code** and select **Download ZIP**. Extract the folder, open it in your terminal, and run:
-
-```bash
-npm install
-```
-
-## Configure your site
-
-Open `sidey.config.ts` at the root of the project. This is the only file you need to touch to make Sidey yours.
-
-```ts title="sidey.config.ts" ins={3-7} collapse={9-15}
-export const sideyConfig = {
-  site: {
-    title: "Your site title",
-    description: "Your site description.",
-    url: "https://yoursite.com",
-    author: "Your Name",
-    locale: "en",
-  },
-  navigation: [
-    { label: "Home", href: "/" },
-    { label: "Writings", href: "/writings" },
-    { label: "About", href: "/about" },
-    { label: "RSS", href: "/rss.xml" },
-  ],
-}
-```
-
-Fill in your details and save. That is the whole setup.
-
-## Run the dev server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:4321](http://localhost:4321) in your browser and you should see your site running.
-
-## Your first page
-
-All content lives in `src/content`. The folder structure is the URL structure (more about this in [Content Structure](/writings/2-content-structure)).
-Create a new writing page with this command:
-
-```bash
-npm run new
-```
-
-You will be prompted to enter a title, description, and tags for your new writing page.
-After that, you can start writing your content in the `src/content/writings/your-first-post-title.mdx` file.
-
-```md title="your-first-post-title.mdx"
----
-title: "Your First Post Title"
-description: "Hello, world."
-date: 2026-01-15
-tags: ["first-tag", "second-tag"]
-draft: false
 ---
 
-The rest of your content goes here.
+## One Ecosystem, Two Perspectives
+
+The panel highlighted two distinct paths for companies originating from Ukraine:
+
+*   **Operating Inside:** Tetiana spoke about the resilience required to operate and grow a fintech business *inside* Ukraine during the war.
+*   **Scaling Globally:** I shared our perspective at Neofin—building a company *outside* of Ukraine and selling mostly abroad, while still remaining heavily connected to the Ukrainian fintech ecosystem.
+
+Companies with Ukrainian roots are omnipresent across the globe, which helps us open new markets. This is because we are not just about meeting deadlines; we are about truly rolling out exceptional products.
+
+---
+
+## Different Strategies for Similar Products
+
+One interesting observation was that even though PayForce and Neofin Solutions build products that look quite similar on paper, our commercial approaches are completely different:
+
+| Feature | PayForce | Neofin Solutions |
+| :--- | :--- | :--- |
+| **Primary Target Market** | Traditional Banks | E-commerce, Telecoms, Retailers, and Businesses with large customer bases |
+| **Core Philosophy** | Enterprise B2B Banking | Enabling non-financial brands to seamlessly launch financial services |
+
+### The Evolution of Neofin
+I also talked about how our product has evolved over time. At some point, Neofin stopped being *"just lending software."* Today, it is a comprehensive engine for:
+*   Digital Wallets & Payments
+*   Advanced Lending Infrastructure
+*   Loyalty Programs & Merchant Experiences
+*   Full-Scale Digital Banking
+
+---
+
+## Expanding the Map
+
+We shared our experiences scaling across the **Balkans and CEE**, where we've learned that while every market has its own regulatory quirks, people ultimately want the same thing: **products that work**. 
+
+> **Looking Ahead:** We absolutely plan a comeback to the Ukrainian market, though I won't pretend it's easy under current realities. 
+
+A wonderful surprise after the panel was meeting **Tamás Katona**. I loved learning more about the Hungarian fintech ecosystem and appreciate the invitation to explore new opportunities in Hungary. Apparently, the map is expanding once again!
+
+---
+
+### Final Thanks
+
+Thanks again to **Sean Murphy** for masterfully moderating the conversation, and to **Tetiana** for proving that two Ukrainian fintech companies can pursue completely different strategies and still find plenty of common ground to talk about.
+
+Now, it's time to head back to my natural habitat: a laptop and a terminal window. 💻
+
 ```
-
-Save the file and visit your live page, listed at [/writings](http://localhost:4321/writings)
-
-## Drafts
-
-Set `draft: true` in any frontmatter to hide a page from the build.
-It will not appear in listing pages or the RSS feed.
-Remove it or set it to `false` when you are ready to publish.
-
-## Default pages
-
-Sidey comes with two default pages ready to edit.
-
-`src/pages/index.mdx` is your index page at `/`. Open it and replace the content with your own introduction.
-`src/pages/about.mdx` is your about page at `/about`. Tell your readers who you are and what this site is about.
-
-Both files use the `SinglePage` layout, which renders them with the default page layout.
-
-## RSS Feed and Sitemap
-
-Sidey includes a built-in RSS feed at `/rss.xml` and a sitemap at `/sitemap-index.xml`.
-Both are generated automatically from your content. No extra configuration needed.
-
-## Deployment
-
-Sidey is a static site. Run the build command to generate the output:
-
-```bash
-npm run build
-```
-
-The output is in the `dist/` folder. Deploy it anywhere that supports static hosting.
-[Cloudflare Pages](https://pages.cloudflare.com) support deploying directly from a GitHub repository with no extra configuration.
