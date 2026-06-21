@@ -88,7 +88,7 @@
 
 /* shadcn Semantic Variables --------------------------------------------------------- */
 :root {
-  --background: var(--flexoki-paper);
+  --background: #ffffff;
   --foreground: var(--flexoki-base-900);
   --card: var(--flexoki-base-50);
   --card-foreground: var(--flexoki-base-900);
