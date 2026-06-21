@@ -36,6 +36,19 @@ export const sideyConfig = {
     { label: "About", href: "/about" },
     { label: "RSS", href: "/rss.xml" },
   ],
+
+  /**
+   * Social Links
+   * -------------------------------------------------------------------------
+   * Social media links displayed in the sidebar with icons.
+   */
+  social: [
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/kshutashvili/",
+      icon: "simple-icons:linkedin",
+    },
+  ],
 }
 
 export type SideyConfigType = typeof sideyConfig

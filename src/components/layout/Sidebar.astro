@@ -1,7 +1,9 @@
 ---
 import { config } from "@parseConfig"
+import { Icon } from "astro-icon/components"
 
 const navMenu = config.navigation
+const socialLinks = config.social || []
 
 const currentPath = Astro.url.pathname
 const isActive = (href: string) =>
@@ -26,5 +28,21 @@ const isActive = (href: string) =>
         </a>
       ))
     }
+
+    {socialLinks.length > 0 && (
+      <div class="flex items-center gap-x-4 md:mt-4 md:flex-col md:items-end md:gap-y-2">
+        {socialLinks.map((social) => (
+          <a
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-muted-foreground transition-colors duration-200 ease-out hover:text-foreground"
+            aria-label={social.label}
+          >
+            <Icon name={social.icon} size={18} />
+          </a>
+        ))}
+      </div>
+    )}
   </nav>
 </aside>

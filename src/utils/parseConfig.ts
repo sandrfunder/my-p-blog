@@ -17,6 +17,13 @@ const configSchema = z.object({
       href: z.string(),
     })
   ),
+  social: z.array(
+    z.object({
+      label: z.string(),
+      href: z.url(),
+      icon: z.string(),
+    })
+  ).optional(),
 })
 
 const parseResult = configSchema.safeParse(sideyConfig)
