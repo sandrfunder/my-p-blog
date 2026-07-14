@@ -9,7 +9,7 @@ export const sideyConfig = {
    */
   site: {
     // The main title displayed in browser tabs and search engine results
-    title: "Alex Kshutashvili",
+    title: "Alisa Kshutashvili",
 
     // A short fallback summary of your site used for SEO and social share cards
     description: "An entrepreneur, minimalist, and human.",
@@ -18,7 +18,7 @@ export const sideyConfig = {
     url: "https://kshutashvili.com",
 
     // Your name, utilized in copyright strings and author meta tags
-    author: "Alex Kshutashvili",
+    author: "Alisa Kshutashvili",
 
     // The primary language attribute for HTML accessibility engines (e.g., "en", "id")
     locale: "en",
