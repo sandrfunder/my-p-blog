@@ -30,10 +30,9 @@ export const sideyConfig = {
    * Controls the links rendered inside your fixed navigation panel.
    * You can add, reorder, or remove objects here to update your site's structure.
    */
-  navigation: [
+navigation: [
     { label: "Home", href: "/" },
     { label: "Writings", href: "/writings" },
-    { label: "About", href: "/about" },
     { label: "RSS", href: "/rss.xml" },
   ],
 
